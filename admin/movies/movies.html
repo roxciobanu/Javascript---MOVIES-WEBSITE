@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="movies.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>Your Website</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <h4>MovieX</h4>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index/home.html">Home</a>
+          </li>
+          <li>
+            <a href="/admin/movies/movies.html">Movies</a>
+          </li>
+          <li class="center-links">
+            <div>
+              <a href="/admin/add/add1.html">Add</a>
+              <a href="/admin/delete/delete.html">Delete</a>
+            </div>
+          </li>
+          <li>
+            <a href="/admin/Login and registration/Login and registration.html" class="login-btn">Login</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    
+    
+
+     <div class="sub-nav">
+     <div class="wrapper-filter">
+     
+
+      <select id="dropdown2">
+        <option value="choose year">choose year</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+      </select>
+      
+      <button id="button1">Filter</button>
+    </div>
+      <input type="text" id="searchInput" placeholder="Search..."/>
+  
+      <div id="progress">
+        <span id="progress-value"></span>
+      </div>
+      
+    </div>
+    
+
+    <div class="wrapper-movies" id="movies"></div>
+    
+  
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="https://banner2.cleanpng.com/20190730/shy/kisspng-photographic-film-movie-camera-cinema-website-and-mobile-application-development-service-5d3fc924ce3b33.8538265315644613488447.jpg"
+          alt="Footer Logo"
+        />
+      </div>
+      <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+    </footer>
+
+    <script src="movies.js"></script>
+  </body>
+</html>

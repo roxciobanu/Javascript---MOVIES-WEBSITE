@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css" />
+    <title>Your Website</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <h4>MovieX</h4>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index/home.html">Home</a>
+          </li>
+          <li>
+            <a href="/admin/movies/movies.html">Movies</a>
+          </li>
+          <li class="center-links">
+            <div>
+              <a href="/admin/add/add1.html">Add</a>
+              <a href="/admin/delete/delete.html">Delete</a>
+            </div>
+          </li>
+          <li>
+            <a href="/admin/Login and registration/Login and registration.html" class="login-btn">Login</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="popup">
+      <p id="popup-message"></p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+    <div id="progress">
+      <span id="progress-value"></span>
+    </div>
+
+    <div class="banner-wrapper">
+      <div class="banner">
+        <video autoplay muted loop id="bg-video">
+          <source
+            src="/images/production_id_3765078 (720p).mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div class="content little-mermaid active">
+          <img
+            src="/images/the-little-mermaid-title.png"
+            alt=""
+            class="movie-title"
+          />
+          <h4>
+            <span>2023</span><span><i>12+</i></span
+            ><span>2h 14min</span><span>Romance</span>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            repellat dolor repudiandae aliquid nisi culpa iusto nobis eaque
+            mollitia. Ad dolores corrupti quisquam odio delectus ratione impedit
+            nihil accusamus reiciendis?
+          </p>
+          <div class="button">
+            <a href="#" class="play-movie"
+              ><i class="bi bi-play-circle"></i>Watch Movie</a
+            >
+            <a href="#" class="add-to-list"
+              ><i class="bi bi-plus"></i>Add to list</a
+            >
+          </div>
+
+          <div class="content bg-65">
+            <img src="/images/bg-65.jpeg" alt="" class="movie-title" />
+            <h4>
+              <span>2024</span><span><i>16+</i></span
+              ><span>1h 14min</span><span>Action</span>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+              repellat dolor repudiandae aliquid nisi culpa iusto nobis eaque
+              mollitia. Ad dolores corrupti quisquam odio delectus ratione
+              impedit nihil accusamus reiciendis?
+            </p>
+            <div class="button">
+              <a href="#" class="play-movie"
+                ><i class="bi bi-play-circle"></i>Watch Movie</a
+              >
+              <a href="#" class="add-to-list"
+                ><i class="bi bi-plus"></i>Add to list</a
+              >
+            </div>
+          </div>
+
+          <div class="content the-black-demon">
+            <img src="/images/the-black-demon.jpg" alt="" class="movie-title" />
+            <h4>
+              <span>2023</span><span><i>12+</i></span
+              ><span>2h 14min</span><span>Romance</span>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+              repellat dolor repudiandae aliquid nisi culpa iusto nobis eaque
+              mollitia. Ad dolores corrupti quisquam odio delectus ratione
+              impedit nihil accusamus reiciendis?
+            </p>
+            <div class="button">
+              <a href="#" class="play-movie"
+                ><i class="bi bi-play-circle"></i>Watch Movie</a
+              >
+              <a href="#" class="add-to-list"
+                ><i class="bi bi-plus"></i>Add to list</a
+              >
+            </div>
+          </div>
+
+          <div class="content the-covenant">
+            <img
+              src="/images/bg-the-covenant.jpeg"
+              alt=""
+              class="movie-title"
+            />
+            <h4>
+              <span>2023</span><span><i>12+</i></span
+              ><span>2h 14min</span><span>Romance</span>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+              repellat dolor repudiandae aliquid nisi culpa iusto nobis eaque
+              mollitia. Ad dolores corrupti quisquam odio delectus ratione
+              impedit nihil accusamus reiciendis?
+            </p>
+            <div class="button">
+              <a href="#" class="play-movie"
+                ><i class="bi bi-play-circle"></i>Watch Movie</a
+              >
+              <a href="#" class="add-to-list"
+                ><i class="bi bi-plus"></i>Add to list</a
+              >
+            </div>
+          </div>
+
+          <div class="content the-thank">
+            <img src="/images/bg-the-tank.jpeg" alt="" class="movie-title" />
+            <h4>
+              <span>2023</span><span><i>12+</i></span
+              ><span>2h 14min</span><span>Romance</span>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+              repellat dolor repudiandae aliquid nisi culpa iusto nobis eaque
+              mollitia. Ad dolores corrupti quisquam odio delectus ratione
+              impedit nihil accusamus reiciendis?
+            </p>
+            <div class="button">
+              <a href="#" class="play-movie"
+                ><i class="bi bi-play-circle"></i>Watch Movie</a
+              >
+              <a href="#" class="add-to-list"
+                ><i class="bi bi-plus"></i>Add to list</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-box">
+          <div class="carousel">
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');"
+            >
+              <img src="/images/the-little-mermaid.jpeg" alt="" />
+            </div>
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-65.jpeg', 'bg-65');"
+            >
+              <img src="/images/65.jpg" alt="" />
+            </div>
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-covenant.jpeg', 'the-covenant');"
+            >
+              <img src="/images/the-covenant.jpg" alt="" />
+            </div>
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');"
+            >
+              <img src="/images/the-black-demon.jpg" alt="" />
+            </div>
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-tank.jpeg', 'the-thank');"
+            >
+              <img src="/images/the-tank.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h4>Popular movies</h4>
+      <i class="bi bi-chevron-left"></i>
+      <i class="bi bi-chevron-right"></i>
+      <div class="cards">
+
+        <!--<a href="#" class="card">
+          <img
+            src="/images/collage-about-movie-time-with-woman-holding-popcorn.jpg"
+            alt=""
+            class="poster"
+          />
+          <div class="rest_card">
+            <img
+              src="/images/collage-about-movie-time-with-woman-holding-popcorn.jpg"
+              alt=""
+            />
+            <div class="cont">
+              <h4>The Boys</h4>
+              <div class="sub">
+                <p>Action, 2022</p>
+                <h3><span>IMDB</span><i class="bi bi-star-fill"></i></h3>
+              </div>
+            </div>
+          </div>
+        </a>  -->
+      </div>
+    </section>
+
+    <section>
+      <h4>Coming soon</h4>
+      <i class="bi bi-chevron-left"></i>
+      <i class="bi bi-chevron-right"></i>
+      <div class="cards2">
+        <!--<a href="#" class="card2">
+          <img
+            src="/images/collage-about-movie-time-with-woman-holding-popcorn.jpg"
+            alt=""
+            class="poster"
+          />
+          <div class="rest_card2">
+            <img
+              src="/images/collage-about-movie-time-with-woman-holding-popcorn.jpg"
+              alt=""
+            />
+            <div class="cont2">
+              <h4>The Boys</h4>
+              <div class="sub">
+                <p>Action, 2022</p>
+                <h3><span>IMDB</span><i class="bi bi-star-fill"></i></h3>
+              </div>
+            </div>
+          </div>
+        </a>  -->
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <h2>Subscribe to Get <br />Newsletter</h2>
+      <form action="">
+        <input
+          type="email"
+          class="email"
+          palceholder="Enter Email..."
+          required
+        />
+        <input type="submit" value="Subscribe" class="btn" />
+      </form>
+    </section>
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="https://banner2.cleanpng.com/20190730/shy/kisspng-photographic-film-movie-camera-cinema-website-and-mobile-application-development-service-5d3fc924ce3b33.8538265315644613488447.jpg"
+          alt="Footer Logo"
+        />
+      </div>
+      <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+  </body>
+</html>

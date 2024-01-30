@@ -1,0 +1,327 @@
+{
+  "movies": [
+
+    {
+      "id": 1,
+      "name": "Joker",
+      "imdb": 7.8,
+      "date": "2010",
+      "sposter": "/images/joker.png",
+      "genre": "adventure"
+
+    },
+   
+    {
+      "id": 2,
+      "name": "Pearl Harbor",
+      "imdb": 7.8,
+      "date": "2011",
+      "sposter": "/images/pearl-harbor.png",
+      "genre": "horror"
+    },
+    {
+      "id": 3,
+      "name": "Inside out 2",
+      "imdb": 7.8,
+      "date": "2013",
+      "sposter": "/images/inside-out-2.png",
+      "genre": "action"
+    },
+    {
+      "id": 4,
+      "name": "Argylle",
+      "imdb": 7.8,
+      "date": "2013",
+      "sposter": "/images/argylle.png",
+      "genre": "action"
+    },
+    {
+      "id": 5,
+      "name": "Beekeeper",
+      "imdb": 7.8,
+      "date": "2014",
+      "sposter": "/images/beekeeper.png",
+      "genre": "action"
+    },
+    {
+      "id": 6,
+      "name": "Night Swim",
+      "imdb": 7.8,
+      "date": "2015",
+      "sposter": "/images/night-swim.png",
+      "genre": "action"
+    },
+    {
+      "id": 7,
+      "name": "Aquaman",
+      "imdb": 7.8,
+      "date": "2016",
+      "sposter": "/images/aquaman.png",
+      "genre": "action"
+    },
+    {
+      "id": 8,
+      "name": "Flash",
+      "imdb": 7.8,
+      "date": "2017",
+      "sposter": "/images/flash.png",
+      "genre": "action"
+    },
+    {
+      "id": 9,
+      "name": "Cold Steel",
+      "imdb": 7.8,
+      "date": "2010",
+      "sposter": "/images/cold-steel.png",
+      "genre": "action"
+    },
+    {
+      "id": 10,
+      "name": "Silent Night",
+      "imdb": 7.8,
+      "date": "2011",
+      "sposter": "/images/silent-night.png",
+      "genre": "action"
+    },
+    {
+      "id": 11,
+      "name": "The Black Demon",
+      "imdb": 7.8,
+      "date": "2012",
+      "sposter": "/images/the-black-demon.jpg",
+      "genre": "action"
+    },
+    {
+      "id": 12,
+      "name": "The covenant",
+      "imdb": 7.8,
+      "date": "2013",
+      "sposter": "/images/the-covenant.jpg",
+      "genre": "action"
+    },
+    {
+      "id": 13,
+      "name": "Little Mermaid",
+      "imdb": 7.8,
+      "date": "2014",
+      "sposter": "/images/the-little-mermaid.jpeg",
+      "genre": "action"
+    },
+    {
+      "id": 14,
+      "name": "The tank",
+      "imdb": 7.8,
+      "date": "2015",
+      "sposter": "/images/the-tank.jpeg",
+      "genre": "action"
+    },
+    {
+      "id": 15,
+      "name": "Golden Compass",
+      "imdb": 7.8,
+      "date": "2016",
+      "sposter": "/images/golden-compass.png",
+      "genre": "action"
+    },
+    {
+      "id": 16,
+      "name": "Rambo",
+      "imdb": 7.8,
+      "date": "2017",
+      "sposter": "/images/rambo.png",
+      "genre": "action"
+    },
+    {
+      "id": 17,
+      "name": "Madagascar 2",
+      "imdb": 7.8,
+      "date": "2010",
+      "sposter": "/images/madagascar-2.png",
+      "genre": "action"
+    }
+  ],
+
+  "popular": [
+
+    {
+      "name": "Little Mermaid",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/bg-little-mermaid.jpg",
+      "genre": "action"
+    },
+
+    {
+      "name": "Stranger things",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/stranger-things.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "65",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/bg-65.jpeg",
+      "genre": "action"
+    },
+
+    {
+      "name": "La la land",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/la-la-land.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "Batman",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/batman.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "Friends",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/friends.png",
+      "genre": "action"
+    }
+
+   
+  ],
+
+  "soon": [
+
+    {
+      "name": "Little Mermaid",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/bg-little-mermaid.jpg",
+      "genre": "action"
+    },
+
+    {
+      "name": "Stranger things",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/stranger-things.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "65",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/bg-65.jpeg",
+      "genre": "action"
+    },
+
+    {
+      "name": "La la land",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/la-la-land.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "Batman",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/batman.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "Friends",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/friends.png",
+      "genre": "action"
+    }
+
+   
+  ],
+  "continue": [
+
+    {
+      "name": "Little Mermaid",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/bg-little-mermaid.jpg",
+      "genre": "action"
+    },
+
+    {
+      "name": "Stranger things",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/stranger-things.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "65",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/bg-65.jpeg",
+      "genre": "action"
+    },
+
+    {
+      "name": "La la land",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/la-la-land.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "Batman",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/batman.png",
+      "genre": "action"
+    },
+
+    {
+      "name": "Friends",
+      "imdb": 7.8,
+      "date": "2023",
+      "sposter": "/images/friends.png",
+      "genre": "action"
+    }
+
+   
+  ],
+
+  "user": [
+
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "hashed_password"
+    }
+  ],
+
+  "movie": [
+
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "hashed_password"
+    }
+  ],
+
+  "favourites": [
+
+    {
+    } 
+  ]
+}

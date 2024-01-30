@@ -1,0 +1,645 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+}
+
+ .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+
+}
+
+.navbar.white-bg {
+  background-color: black;
+  color: white;
+}
+
+.navbar .logo h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center; 
+}
+
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar nav li {
+  margin-right: 20px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #ff4500;
+}
+
+.navbar nav li:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+
+.navbar nav .center-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav .center-links div {
+  display: flex;
+}
+
+.navbar nav .center-links a {
+  margin-right: 20px; 
+}
+.navbar nav a.login-btn {
+  background-color: #ff4500;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar nav a.login-btn:hover {
+  background-color: #d13400;
+
+}
+
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+#popup h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#popup-message {
+  margin: 15px 0;
+  color: #666;
+}
+
+#popup button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#popup button:hover {
+  background-color: #0056b3;
+}
+
+#progress{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  display: grid;
+  place-items: center;
+z-index: 2;
+}
+
+#progress-value{
+  display: block;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  background-color: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0px;
+}
+
+
+.banner-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../images/bg-little-mermaid.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; 
+}
+
+
+.content {
+  position: relative;
+  max-width: 550px;
+  display: none;
+  visibility: hidden;
+  transform: scale(0);
+  transition: 0.5s;
+
+}
+
+.content.active {
+  display: block;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.5s;
+  
+}
+
+.movie-title {
+  max-width: 350px;
+}
+
+.banner .content h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 40px;
+
+}
+
+.banner .content h4 span {
+ padding: 0 10px;
+ border-right: 1px solid #fff;
+
+}
+
+.banner .content h4 span:first-child {
+  padding-left: 0;
+ 
+ }
+
+ .banner .content h4 span:last-child {
+ border-right: none;
+ 
+ }
+ 
+ .banner .content h4 span i{
+  background: red;
+color: #fff;
+padding: 0 8px;
+display: inline-block;
+border-radius: 2px;
+}
+
+.banner .content p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 10px 0 20px;
+}
+
+.banner .content .button {
+  position: relative;
+}
+
+
+.banner .content .button a {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  background:red;
+  color: #fff;
+  padding: 6px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5;
+cursor: pointer;
+}
+ 
+.play-movie i{
+  margin-right: 8px;
+  
+}
+.banner .content .button a:nth-child(2){
+background: rgba(0, 0, 0, 0.5);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.banner .content .button a:hover:nth-child(2){
+  background: red;
+  }
+
+footer {
+  padding: 24px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  max-width: 100%;
+}
+.footer-logo img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 100px 50px;
+}
+
+section h4 {
+  color: #8f8f8f;
+}
+
+section .cards {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+section .cards::-webkit-scrollbar {
+  display: none;
+}
+
+section .card {
+  margin-top: 20px;
+  min-width: 300px;
+  height: 180px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: min-width 0.5s;
+}
+
+section .card:hover {
+  min-width: 350px;
+}
+
+section .card .poster {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.5s;
+}
+
+section .rest_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  z-index: 2;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px; 
+  box-sizing: border-box;
+  transition: opacity 0.5s;
+}
+
+section .card:hover .rest_card {
+  opacity: 1;
+}
+
+section .rest_card .cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  position: relative;
+  z-index: 2;
+  padding-bottom: 12px;
+}
+
+
+section .rest_card .cont h4 {
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+section .rest_card .cont .sub {
+  display: flex;
+  align-items: flex-end; 
+  justify-content: space-between;
+}
+
+section .rest_card .cont .sub p {
+  font-size: 14px; 
+  font-weight: 400; 
+  margin-bottom: 10px; 
+}
+
+section .rest_card .cont h3 {
+  font-size: 16px; 
+  display: flex;
+  align-items: center;
+}
+
+section .rest_card .cont h3 span {
+  background: yellow;
+  color: #000;
+  padding: 0px 5px; 
+  margin: 0px 5px 0px 10px;
+  font-weight: 500;
+  border-radius: 3px; 
+}
+
+section .rest_card .cont h3 i {
+  margin-right: 3px;
+}
+
+
+
+section .bi-chevron-left,
+section .bi-chevron-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em; 
+  color: #333; 
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+section .bi-chevron-left {
+  left: 10px;
+}
+
+section .bi-chevron-right {
+  right: 10px;
+}
+
+section .bi-chevron-left:hover,
+section .bi-chevron-right:hover {
+  color: #ff4500; 
+}
+
+
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 40px
+  
+}
+
+section h4 {
+color:#8f8f8f;
+}
+
+section .cards2 {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+section .cards2::-webkit-scrollbar {
+  display: none;
+}
+
+section .card2 {
+  margin-top: 20px;
+  min-width: 300px;
+  height: 180px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: min-width 0.5s;
+}
+
+section .card2:hover {
+  min-width: 350px;
+}
+
+section .card2 .poster {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.5s; 
+}
+
+
+
+section .rest_card2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  z-index: 2;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 0.5s; 
+}
+
+section .card2:hover .rest_card2 {
+  opacity: 1;
+}
+
+
+
+
+section .rest_card2 .cont2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 12px;
+}
+
+section .rest_card2 .cont2 .sub  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .rest_card2 .cont2 p  {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+section .rest_card2 .cont2 h3 {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+section .rest_card2 .cont2 h3 span {
+  background: yellow;
+  color: #000;
+  padding: 0px 3px;
+  margin: 0px 5px 0px 10px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+section .rest_card2 .cont2 h3 i {
+  margin-right: 3px;
+}
+
+
+section .bi-chevron-left2,
+section .bi-chevron-right2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em; 
+  color: #333; 
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+section .bi-chevron-left2 {
+  left: 10px;
+}
+
+section .bi-chevron-right2 {
+  right: 10px;
+}
+
+section .bi-chevron-left2:hover,
+section .bi-chevron-right2:hover {
+  color: #ff4500; 
+}
+
+.newsletter {
+  max-width: 968px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.newsletter h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff; 
+}
+
+.newsletter form {
+  background: #333; 
+  padding: 20px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter form .email {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #555; 
+  border-radius: 0.5rem;
+  margin-right: 10px; 
+}
+
+.newsletter form input::placeholder {
+  color: #888; 
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.newsletter .btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ff4500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.newsletter .btn:hover {
+  background: #fff;
+  color: #ff4500;
+}
+
